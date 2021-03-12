@@ -1,0 +1,19 @@
+<div class="container">
+  <strong>AppComponent </strong>
+  <p> This is the top most component </p>
+  
+  <parent1></parent1>
+  <parent2></parent2>
+  <br> 
+  <button type="button" (click)="getUsers()">
+    Get Users
+  </button>
+  
+  <div *ngFor="let user of userList">
+    <p>
+      Name: {{user.name}}, Age: {{user.age}}
+    </p>
+  </div>
+  
+
+</div>
